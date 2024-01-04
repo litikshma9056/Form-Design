@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+        }
+        label{
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Input your name" />
+
+        
+        <label for="city">City:</label>
+        <select id="city">
+            <option value="bhopal">Bhopal</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="chennai">Chennai</option>
+        </select>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="Enter your address"></textarea>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        
+        <label>Hobbies:</label>
+        <label for="cricketHobby">Cricket</label>
+        <input type="checkbox" id="cricketHobby" />
+        <label for="chessHobby">Chess</label>
+        <input type="checkbox" id="chessHobby" />
+        <label for="paintingHobby">Painting</label>
+        <input type="checkbox" id="paintingHobby" /><br>
+
+
+
+        <input type="submit" id="fetch" value="Save now" onclick="save()" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
